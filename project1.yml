@@ -1,6 +1,6 @@
 ---
 - name: regist loop
-  hosts: localhost
+  hosts: all
   tasks:
      - name: jalan
        shell: echo "{{item}}"
