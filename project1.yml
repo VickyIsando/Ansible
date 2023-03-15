@@ -1,0 +1,15 @@
+---
+- name: regist loop
+  hosts: localhost
+  tasks:
+     - name: jalan
+       shell: echo "{{item}}"
+       loop:
+          - one
+          - two
+       register: echo
+     - name: jalan-jalan
+       shell: echo "{{ item }}"
+       loop:
+          - three
+          - four
